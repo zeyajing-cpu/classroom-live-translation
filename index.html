@@ -141,6 +141,8 @@
     clearTimeout(draftTimer);
     draftAbort?.abort();
     draftVersion++;
+    lastDraftAt = 0;
+    lastDraftText = '';
     draftEntry?.sourceEntry.remove();
     draftEntry?.targetEntry.remove();
     draftEntry = null;
