@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8fc"><title>多语言课堂实时翻译</title><style>
 :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#1c2540;background:#f6f8fc;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -25%,#e0eaff 0,transparent 55%),#f7f8fc}.shell{max-width:1060px;margin:auto;padding:38px 26px 56px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:35px}.brand{display:flex;align-items:center;gap:12px;font-weight:750;font-size:16px}.logo{width:38px;height:38px;border-radius:13px;background:#4359d9;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px #4359d944}.logo svg{width:20px}.beta{font-size:12px;background:#eef0ff;color:#4959c9;border-radius:20px;padding:6px 10px}.hero{text-align:center;margin-bottom:28px}.eyebrow{color:#5c6bd1;font-size:13px;font-weight:700;letter-spacing:.08em}.hero h1{font-size:clamp(30px,5vw,44px);letter-spacing:-1.5px;margin:12px 0 10px;color:#20294a}.hero p{margin:0;color:#78819a;font-size:15px}.panel{background:#fff;border:1px solid #e9ecf4;border-radius:20px;box-shadow:0 14px 45px #24335c0b}.control{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:18px}.lang{display:flex;align-items:center;gap:12px}.lang-pill{display:flex;align-items:center;gap:10px;border:1px solid #e8eaf1;background:#fbfcfe;border-radius:12px;padding:11px 15px;font-size:14px;font-weight:650}.lang-select{border:0;background:transparent;color:#27314d;font:inherit;font-weight:650;outline:none;cursor:pointer;max-width:165px}.lang-select:disabled{opacity:.72;cursor:not-allowed}.lang-pill b{font-size:11px;color:#77809a;background:#f0f2f8;border-radius:6px;padding:3px 6px}.arrow{color:#98a0b4}.session{display:flex;align-items:center;gap:9px;color:#858da2;font-size:13px}.dot{width:8px;height:8px;border-radius:50%;background:#b7bdcb}.dot.live{background:#31b578;box-shadow:0 0 0 4px #31b57820;animation:pulse 1.8s infinite}@keyframes pulse{50%{box-shadow:0 0 0 7px #31b57808}}.workspace{display:grid;grid-template-columns:1fr 1fr;gap:16px}.column{min-height:380px;padding:22px 23px;display:flex;flex-direction:column}.colhead{display:flex;align-items:center;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid #eff1f6}.label{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;color:#545e79}.label-icon{width:29px;height:29px;border-radius:9px;background:#f2f4fb;color:#66718d;display:grid;place-items:center}.label-icon svg{width:16px}.live-label{font-size:11px;color:#d75858;background:#fff1f0;padding:5px 8px;border-radius:8px;font-weight:700}.content{padding-top:20px;flex:1}.placeholder{color:#abb1c1;font-size:14px;line-height:1.8}.transcript{font-size:15px;line-height:1.8;color:#546078;margin:0 0 12px}.transcript.interim{color:#a0a6b5}.translation{font-size:19px;line-height:1.9;color:#263153;margin:0 0 18px;letter-spacing:.01em}.translation.wait{color:#a2a8b7;font-size:15px}.entry{padding:15px 0;border-bottom:1px solid #f0f1f5}.entry:last-child{border-bottom:0}.empty{height:100%;min-height:230px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#a4aabb;font-size:13px;line-height:1.8}.empty-icon{height:48px;width:48px;border-radius:15px;background:#f4f6fb;display:grid;place-items:center;color:#9ca6bd;margin-bottom:10px}.empty-icon svg{width:22px}.bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px}.hint{font-size:12px;color:#8b93a8;line-height:1.7}.actions{display:flex;gap:10px}.button{border:0;border-radius:12px;padding:12px 18px;font-size:14px;font-weight:700;cursor:pointer;transition:.18s}.button:disabled{opacity:.48;cursor:not-allowed}.secondary{color:#66708b;background:#fff;border:1px solid #e5e8f0}.secondary:hover{background:#f7f8fb}.primary{color:#fff;background:#485bd6;box-shadow:0 5px 14px #485bd630;min-width:130px}.primary:hover{background:#3d50ca;transform:translateY(-1px)}.primary.stop{background:#e55858;box-shadow:0 5px 14px #e5585830}.notice{margin-top:22px;background:#f0f3fb;border-radius:12px;padding:13px 16px;color:#6b7591;font-size:12px;line-height:1.75;display:flex;gap:10px}.notice span:first-child{font-size:15px}.foot{display:flex;justify-content:center;margin-top:22px;color:#a4aaba;font-size:11px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:#263153;color:#fff;padding:12px 17px;border-radius:10px;font-size:13px;opacity:0;transition:.2s;pointer-events:none;max-width:90vw;text-align:center;z-index:4}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:680px){.shell{padding:23px 15px 36px}.top{margin-bottom:26px}.hero{margin-bottom:22px}.control{padding:15px;align-items:flex-start;flex-direction:column}.workspace{grid-template-columns:1fr}.column{min-height:280px;padding:18px}.bottom{align-items:stretch;flex-direction:column-reverse}.actions .button{flex:1}.hint{text-align:center}.empty{min-height:130px}}
-</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v12H8l-4 3z"/><path d="M8 9h8M8 13h5"/></svg></div>多语言课堂实时翻译</div><span class="beta">轻量课堂工具</span></header><section class="hero"><div class="eyebrow">LISTEN · UNDERSTAND</div><h1>听懂更多语言的课堂内容</h1><p>实时识别英语、日语、韩语和德语，并显示简体中文译文</p></section><section class="panel control"><div class="lang"><label class="lang-pill"><b>FROM</b><select id="sourceLang" class="lang-select" aria-label="选择识别语言"><option value="en-US">English</option><option value="ja-JP">日本語</option><option value="ko-KR">한국어</option><option value="de-DE">Deutsch</option></select></label><span class="arrow">→</span><div class="lang-pill"><b>TO</b> 简体中文</div></div><div class="session"><span class="dot" id="dot"></span><span id="status">准备就绪</span></div></section><section class="workspace"><article class="panel column"><div class="colhead"><div class="label"><span class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1m7 8v4m-4 0h8"/></svg></span><span id="sourceTitle">英文识别</span></div><span id="liveLabel" class="live-label" hidden>正在聆听</span></div><div class="content" id="source"><div class="empty" id="sourceEmpty"><div class="empty-icon">Aa</div>开始后，老师说的话会显示在这里</div></div></article><article class="panel column"><div class="colhead"><div class="label"><span class="label-icon" style="color:#5061d2;background:#eff1ff">译</span>中文翻译</div><span style="font-size:11px;color:#929ab0">逐句更新</span></div><div class="content" id="target"><div class="empty" id="targetEmpty"><div class="empty-icon">文</div>中文译文会同步显示在这里</div></div></article></section><div class="bottom"><div class="hint">建议佩戴耳机或靠近讲台，减少环境噪声<br>课堂内容将交由浏览器语音服务和翻译服务处理</div><div class="actions"><button class="button secondary" id="clear">清空内容</button><button class="button primary" id="toggle">开始聆听</button></div></div><div class="notice"><span>ⓘ</span><span id="supportNote">需要允许麦克风访问，并保持网络连接。语音识别能力取决于浏览器；推荐使用最新版 Chrome 或 Edge。翻译服务有使用额度和延迟限制，课堂术语也可能需要自行核对。</span></div><footer class="foot">原型 · 实际效果受设备、网络、口音与环境噪声影响</footer></main><div class="toast" id="toast"></div><script>/* 实时译文草稿和断连恢复；依赖页面已有的翻译界面元素。 */
+</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v12H8l-4 3z"/><path d="M8 9h8M8 13h5"/></svg></div>多语言课堂实时翻译</div><span class="beta">轻量课堂工具</span></header><section class="hero"><div class="eyebrow">LISTEN · UNDERSTAND</div><h1>听懂更多语言的课堂内容</h1><p>实时识别英语、日语、韩语和德语，并显示简体中文译文</p></section><section class="panel control"><div class="lang"><label class="lang-pill"><b>FROM</b><select id="sourceLang" class="lang-select" aria-label="选择识别语言"><option value="en-US">English</option><option value="ja-JP">日本語</option><option value="ko-KR">한국어</option><option value="de-DE">Deutsch</option></select></label><span class="arrow">→</span><div class="lang-pill"><b>TO</b> 简体中文</div></div><div class="session"><span class="dot" id="dot"></span><span id="status">准备就绪</span></div></section><section class="workspace"><article class="panel column"><div class="colhead"><div class="label"><span class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1m7 8v4m-4 0h8"/></svg></span><span id="sourceTitle">英文识别</span></div><span id="liveLabel" class="live-label" hidden>正在聆听</span></div><div class="content" id="source"><div class="empty" id="sourceEmpty"><div class="empty-icon">Aa</div>开始后，老师说的话会显示在这里</div></div></article><article class="panel column"><div class="colhead"><div class="label"><span class="label-icon" style="color:#5061d2;background:#eff1ff">译</span>中文翻译</div><span style="font-size:11px;color:#929ab0">逐句更新</span></div><div class="content" id="target"><div class="empty" id="targetEmpty"><div class="empty-icon">文</div>中文译文会同步显示在这里</div></div></article></section><div class="bottom"><div class="hint">建议佩戴耳机或靠近讲台，减少环境噪声<br>语音由腾讯云实时识别，识别文本会发送至 MyMemory 获取中文译文。请先征得授课者和参与者同意。</div><div class="actions"><button class="button secondary" id="clear">清空内容</button><button class="button primary" id="toggle">开始聆听</button></div></div><div class="notice"><span>ⓘ</span><span id="supportNote">需要允许麦克风访问，并保持网络连接。语音识别能力取决于浏览器；推荐使用最新版 Chrome 或 Edge。翻译服务有使用额度和延迟限制，课堂术语也可能需要自行核对。</span></div><footer class="foot">原型 · 实际效果受设备、网络、口音与环境噪声影响</footer></main><div class="toast" id="toast"></div><script>/* Real-time Tencent ASR client; translation remains text-only through MyMemory. */
 (() => {
-  const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const ASR_SIGN_ENDPOINT = 'https://YOUR-WORKER.workers.dev/sign';
   const langSelect = document.querySelector('#sourceLang');
   const sourceTitle = document.querySelector('#sourceTitle');
   const toggle = document.querySelector('#toggle');
@@ -14,41 +14,34 @@
   const toast = document.querySelector('#toast');
   const liveLabel = document.querySelector('#liveLabel');
   const languageInfo = {
-    'en-US': { label: '英文', code: 'en' },
-    'ja-JP': { label: '日文', code: 'ja' },
-    'ko-KR': { label: '韩文', code: 'ko' },
-    'de-DE': { label: '德文', code: 'de' }
+    'en-US': { label: '英文' }, 'ja-JP': { label: '日文' },
+    'ko-KR': { label: '韩文' }, 'de-DE': { label: '德文' }
   };
-
-  let listening = false;
-  let recognition = null;
-  let restartTimer = null;
-  let draftTimer = null;
-  let toastTimer = null;
-  let retryCount = 0;
-  let draftVersion = 0;
-  let draftAbort = null;
-  let draftEntry = null;
+  const PACKET_SAMPLES = 3200; // 200 ms at 16 kHz mono PCM.
   const MAX_RETRIES = 8;
   const MAX_RETRY_DELAY = 15000;
+
+  let listening = false;
+  let stopping = false;
+  let socket = null;
+  let stream = null;
+  let audioContext = null;
+  let processor = null;
+  let mutedOutput = null;
+  let restartTimer = null;
+  let stableTimer = null;
+  let handshakeTimer = null;
+  let retryCount = 0;
+  let pendingPcm = new Int16Array(0);
+  const entries = new Map();
 
   const showToast = (message) => {
     toast.textContent = message;
     toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 4200);
+    setTimeout(() => toast.classList.remove('show'), 4500);
   };
 
-  const escapeHtml = (text) => text.replace(/[&<>"']/g, (char) => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-  })[char]);
-
-  const clearPlaceholders = () => {
-    document.querySelector('#sourceEmpty')?.remove();
-    document.querySelector('#targetEmpty')?.remove();
-  };
-
-  const setListening = (on, message) => {
+  const setState = (on, message) => {
     listening = on;
     toggle.textContent = on ? '结束聆听' : '开始聆听';
     toggle.classList.toggle('stop', on);
@@ -58,27 +51,17 @@
     langSelect.disabled = on;
   };
 
-  async function translate(text, node, sourceLanguage, version, signal) {
-    const code = languageInfo[sourceLanguage]?.code || 'en';
-    const url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) +
-      '&langpair=' + encodeURIComponent(code + '|zh-CN');
-    const response = await fetch(url, { signal });
-    if (!response.ok) throw new Error('翻译服务暂不可用');
-    const data = await response.json();
-    if (data.responseStatus !== 200) throw new Error(data.responseDetails || '翻译服务暂不可用');
-    if ((version === null || version === draftVersion) && node.isConnected) {
-      node.textContent = data.responseData.translatedText || '暂时没有译文';
-      node.classList.remove('wait');
-    }
+  function clearPlaceholders() {
+    document.querySelector('#sourceEmpty')?.remove();
+    document.querySelector('#targetEmpty')?.remove();
   }
 
-  function createEntry(text, isDraft) {
+  function makeEntry(index) {
     clearPlaceholders();
     const sourceEntry = document.createElement('div');
     sourceEntry.className = 'entry';
     const transcript = document.createElement('p');
-    transcript.className = 'transcript' + (isDraft ? ' interim' : '');
-    transcript.textContent = text;
+    transcript.className = 'transcript interim';
     sourceEntry.append(transcript);
     source.append(sourceEntry);
 
@@ -86,192 +69,255 @@
     targetEntry.className = 'entry';
     const translation = document.createElement('p');
     translation.className = 'translation wait';
-    translation.textContent = isDraft ? '等待更多语音…' : '正在翻译…';
+    translation.textContent = '等待语音片段…';
     targetEntry.append(translation);
     target.append(targetEntry);
+    return { sourceEntry, transcript, targetEntry, translation, version: 0, timer: null, controller: null };
+  }
+
+  async function translateLine(line, text, final, version) {
+    const language = langSelect.value;
+    const code = ({ 'en-US': 'en', 'ja-JP': 'ja', 'ko-KR': 'ko', 'de-DE': 'de' })[language] || 'en';
+    const endpoint = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) +
+      '&langpair=' + encodeURIComponent(code + '|zh-CN');
+    try {
+      const response = await fetch(endpoint, { signal: line.controller?.signal });
+      if (!response.ok) throw new Error('Translation request failed');
+      const payload = await response.json();
+      if (payload.responseStatus !== 200) throw new Error('Translation service unavailable');
+      if (version === line.version && line.translation.isConnected) {
+        line.translation.textContent = payload.responseData.translatedText || '暂时没有译文';
+        line.translation.classList.remove('wait');
+        if (final) line.transcript.classList.remove('interim');
+      }
+    } catch (error) {
+      if (error.name !== 'AbortError' && version === line.version) {
+        line.translation.textContent = '翻译暂不可用，请检查网络';
+        line.translation.classList.remove('wait');
+      }
+    }
+  }
+
+  function updateLine(result) {
+    const text = (result.voice_text_str || '').trim();
+    if (!text) return;
+    const index = result.index;
+    let line = entries.get(index);
+    if (!line) {
+      line = makeEntry(index);
+      entries.set(index, line);
+    }
+    line.transcript.textContent = text;
+    clearTimeout(line.timer);
+    line.controller?.abort();
+    line.controller = new AbortController();
+    const version = ++line.version;
+    const isFinal = result.slice_type === 2;
+    if (isFinal) {
+      line.timer = null;
+      void translateLine(line, text, true, version);
+    } else {
+      line.translation.textContent = '正在整理语音…';
+      line.translation.classList.add('wait');
+      if (text.length >= 5) {
+        line.timer = setTimeout(() => {
+          line.translation.textContent = '正在翻译…';
+          void translateLine(line, text, false, version);
+        }, 650);
+      }
+    }
     source.scrollTop = source.scrollHeight;
     target.scrollTop = target.scrollHeight;
-    return { sourceEntry, transcript, targetEntry, translation };
   }
 
-  function updateDraft(text, language) {
-    if (!text) {
-      clearTimeout(draftTimer);
-      draftAbort?.abort();
-      draftEntry?.sourceEntry.remove();
-      draftEntry?.targetEntry.remove();
-      draftEntry = null;
-      return;
+  function downsampleToPcm(input, inputRate) {
+    const ratio = inputRate / 16000;
+    const output = new Int16Array(Math.floor(input.length / ratio));
+    for (let i = 0; i < output.length; i++) {
+      const start = Math.floor(i * ratio);
+      const end = Math.min(Math.floor((i + 1) * ratio), input.length);
+      let sum = 0;
+      for (let j = start; j < end; j++) sum += input[j];
+      const sample = Math.max(-1, Math.min(1, sum / Math.max(1, end - start)));
+      output[i] = sample < 0 ? sample * 0x8000 : sample * 0x7fff;
     }
-    clearPlaceholders();
-    if (!draftEntry) draftEntry = createEntry(text, true);
-    draftEntry.transcript.textContent = text;
-    draftEntry.translation.textContent = '正在整理语音…';
-    draftEntry.translation.classList.add('wait');
-    clearTimeout(draftTimer);
-    draftAbort?.abort();
+    return output;
+  }
 
-    // Interim 识别文本会反复修订；停顿 700ms 后再翻译，减少请求和译文闪烁。
-    if (text.trim().length < 5) return;
-    const version = ++draftVersion;
-    draftTimer = setTimeout(async () => {
-      const entry = draftEntry;
-      if (!entry) return;
-      draftAbort = new AbortController();
-      entry.translation.textContent = '正在翻译…';
-      try {
-        await translate(text, entry.translation, language, version, draftAbort.signal);
-      } catch (error) {
-        if (error.name !== 'AbortError' && version === draftVersion) {
-          entry.translation.textContent = '实时译文暂不可用，定稿后会重试';
-        }
+  function appendPcm(chunk) {
+    if (!chunk.length) return;
+    const combined = new Int16Array(pendingPcm.length + chunk.length);
+    combined.set(pendingPcm);
+    combined.set(chunk, pendingPcm.length);
+    let offset = 0;
+    while (combined.length - offset >= PACKET_SAMPLES) {
+      if (socket?.readyState === WebSocket.OPEN && socket.asrReady) {
+        socket.send(combined.slice(offset, offset + PACKET_SAMPLES).buffer);
       }
-    }, 700);
-  }
-
-  async function commitFinal(text, language) {
-    if (!text.trim()) return;
-    clearTimeout(draftTimer);
-    draftAbort?.abort();
-    draftVersion++;
-    draftEntry?.sourceEntry.remove();
-    draftEntry?.targetEntry.remove();
-    draftEntry = null;
-    const entry = createEntry(text.trim(), false);
-    try {
-      await translate(text.trim(), entry.translation, language, null, undefined);
-    } catch {
-      entry.translation.textContent = '翻译暂不可用，请检查网络后重试';
-      entry.translation.classList.remove('wait');
+      offset += PACKET_SAMPLES;
     }
+    pendingPcm = combined.slice(offset);
   }
 
-  function scheduleRestart() {
-    if (!listening || restartTimer) return;
+  function attachAudio() {
+    if (!stream || processor) return;
+    audioContext = new AudioContext();
+    const input = audioContext.createMediaStreamSource(stream);
+    processor = audioContext.createScriptProcessor(4096, 1, 1);
+    mutedOutput = audioContext.createGain();
+    mutedOutput.gain.value = 0;
+    processor.onaudioprocess = (event) => {
+      if (!listening) return;
+      appendPcm(downsampleToPcm(event.inputBuffer.getChannelData(0), audioContext.sampleRate));
+    };
+    input.connect(processor);
+    processor.connect(mutedOutput);
+    mutedOutput.connect(audioContext.destination);
+  }
+
+  function disposeSocket() {
+    clearTimeout(handshakeTimer);
+    handshakeTimer = null;
+    if (!socket) return;
+    const oldSocket = socket;
+    socket = null;
+    oldSocket.asrReady = false;
+    oldSocket.onopen = oldSocket.onmessage = oldSocket.onerror = oldSocket.onclose = null;
+    try { oldSocket.close(); } catch { /* already closed */ }
+  }
+
+  function stopAudio() {
+    processor?.disconnect();
+    mutedOutput?.disconnect();
+    processor = null;
+    mutedOutput = null;
+    if (audioContext) void audioContext.close();
+    audioContext = null;
+    stream?.getTracks().forEach((track) => track.stop());
+    stream = null;
+  }
+
+  function stop(message = '已停止聆听') {
+    stopping = true;
+    listening = false;
+    clearTimeout(restartTimer);
+    clearTimeout(stableTimer);
+    restartTimer = null;
+    stableTimer = null;
+    if (socket?.readyState === WebSocket.OPEN && socket.asrReady) {
+      try { socket.send(JSON.stringify({ type: 'end' })); } catch { /* connection ended */ }
+    }
+    disposeSocket();
+    stopAudio();
+    pendingPcm = new Int16Array(0);
+    for (const line of entries.values()) {
+      clearTimeout(line.timer);
+      line.controller?.abort();
+    }
+    setState(false, message === '已停止聆听' ? '准备就绪' : message);
+    stopping = false;
+  }
+
+  function retry(message) {
+    if (!listening || stopping || restartTimer) return;
+    disposeSocket();
     if (retryCount >= MAX_RETRIES) {
-      setListening(false, '连接多次失败，请检查网络后重试');
-      showToast('语音识别暂时无法恢复。网络恢复后，请重新开始聆听。');
+      stop('语音服务多次连接失败');
+      showToast(message || '语音识别服务暂时不可用。请检查网络和云服务配置后重试。');
       return;
     }
+    clearTimeout(stableTimer);
+    stableTimer = null;
     const delay = Math.min(1000 * (2 ** retryCount), MAX_RETRY_DELAY);
     retryCount++;
-    setListening(true, `语音连接中断，${Math.ceil(delay / 1000)} 秒后重试`);
+    setState(true, `语音连接中断，${Math.ceil(delay / 1000)} 秒后重试`);
     restartTimer = setTimeout(() => {
       restartTimer = null;
-      if (listening) startRecognition();
+      if (listening) void connectAsr();
     }, delay);
   }
 
-  function startRecognition() {
-    if (!listening || !Speech) return;
-    const instance = new Speech();
-    recognition = instance;
-    instance.lang = langSelect.value;
-    instance.continuous = true;
-    instance.interimResults = true;
-    instance.maxAlternatives = 1;
-
-    instance.onresult = (event) => {
-      let interim = '';
-      const finals = [];
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        const result = event.results[i];
-        const text = result[0].transcript.trim();
-        if (!text) continue;
-        if (result.isFinal) finals.push(text);
-        else interim += (interim ? ' ' : '') + text;
-      }
-      const language = langSelect.value;
-      if (interim) updateDraft(interim, language);
-      else if (!finals.length) updateDraft('', language);
-      finals.forEach((text) => { void commitFinal(text, language); });
-    };
-
-    instance.onerror = (event) => {
-      if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
-        listening = false;
-        clearTimeout(restartTimer);
-        restartTimer = null;
-        setListening(false);
-        showToast('麦克风或语音服务未获授权。请在浏览器设置中允许麦克风后重试。');
-      } else if (event.error === 'audio-capture') {
-        listening = false;
-        clearTimeout(restartTimer);
-        restartTimer = null;
-        setListening(false);
-        showToast('没有检测到可用麦克风，请检查设备连接。');
-      } else if (event.error === 'network') {
-        setListening(true, '语音服务网络中断，正在恢复…');
-        // 识别服务通常随后触发 onend；若未触发则由定时器兜底。
-        setTimeout(() => {
-          if (listening && recognition === instance) scheduleRestart();
-        }, 1200);
-      } else if (event.error !== 'no-speech' && event.error !== 'aborted') {
-        showToast('语音识别遇到问题：' + event.error);
-      }
-    };
-
-    instance.onstart = () => setListening(true, '正在聆听');
-
-    instance.onend = () => {
-      if (recognition === instance && listening) scheduleRestart();
-      else if (!listening) setListening(false);
-    };
-
+  async function connectAsr() {
+    if (!listening) return;
     try {
-      instance.start();
-      setListening(true, retryCount ? '正在恢复语音连接…' : '正在聆听');
-    } catch {
-      scheduleRestart();
+      setState(true, '正在连接实时语音服务…');
+      const signer = new URL(ASR_SIGN_ENDPOINT);
+      signer.searchParams.set('lang', langSelect.value);
+      const signed = await fetch(signer, { cache: 'no-store' });
+      if (!signed.ok) throw new Error(`签名服务返回 ${signed.status}`);
+      const result = await signed.json();
+      if (!result.url) throw new Error(result.error || '签名服务未返回连接地址');
+      const ws = new WebSocket(result.url);
+      ws.binaryType = 'arraybuffer';
+      ws.asrReady = false;
+      socket = ws;
+      handshakeTimer = setTimeout(() => {
+        if (socket === ws && !ws.asrReady) retry('腾讯云连接建立超时，请检查网络或密钥配置。');
+      }, 12000);
+      ws.onmessage = (event) => {
+        let message;
+        try { message = JSON.parse(event.data); } catch { return; }
+        if (message.code !== 0) {
+          const details = message.message || `错误码 ${message.code}`;
+          retry(`语音服务错误：${details}`);
+          return;
+        }
+        if (!ws.asrReady) {
+          clearTimeout(handshakeTimer);
+          handshakeTimer = null;
+          ws.asrReady = true;
+          clearTimeout(stableTimer);
+          stableTimer = setTimeout(() => { retryCount = 0; }, 30000);
+          attachAudio();
+          setState(true, '正在聆听');
+        }
+        if (message.result) updateLine(message.result);
+        if (message.final === 1 && listening) retry('识别连接已结束，正在重新连接…');
+      };
+      ws.onerror = () => retry('无法连接语音识别服务。请检查网络、签名服务和云端配置。');
+      ws.onclose = () => {
+        if (listening && socket === ws) retry('语音识别服务连接已关闭，正在重连…');
+      };
+    } catch (error) {
+      retry(error.message || '无法连接实时语音服务');
     }
   }
 
-  function start() {
-    if (!Speech) {
-      showToast('当前浏览器不支持网页语音识别，请使用最新版 Chrome 或 Edge。');
+  async function start() {
+    if (ASR_SIGN_ENDPOINT.includes('YOUR-WORKER')) {
+      showToast('实时语音服务尚未配置。请先部署签名服务并填写 Worker 地址。');
+      return;
+    }
+    if (!navigator.mediaDevices?.getUserMedia) {
+      showToast('当前浏览器无法访问麦克风，请使用最新版 Chrome 或 Edge。');
       return;
     }
     if (!window.isSecureContext) {
-      showToast('麦克风需要安全网页环境，请通过 HTTPS 或本机地址打开。');
+      showToast('麦克风需要安全网页环境，请通过 HTTPS 打开。');
       return;
     }
-    retryCount = 0;
-    listening = true;
-    startRecognition();
-  }
-
-  function stop() {
-    listening = false;
-    clearTimeout(restartTimer);
-    clearTimeout(draftTimer);
-    restartTimer = null;
-    draftAbort?.abort();
-    if (recognition) {
-      const oldRecognition = recognition;
-      recognition = null;
-      try { oldRecognition.stop(); } catch { /* 已停止 */ }
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+      retryCount = 0;
+      stopping = false;
+      setState(true, '正在连接实时语音服务…');
+      await connectAsr();
+    } catch (error) {
+      stop('准备就绪');
+      showToast(error.name === 'NotAllowedError' ? '麦克风未获授权，请在浏览器地址栏中允许麦克风。' : '无法打开麦克风：' + error.message);
     }
-    const unfinishedText = draftEntry?.transcript.textContent.trim();
-    if (unfinishedText) void commitFinal(unfinishedText, langSelect.value);
-    else updateDraft('', langSelect.value);
-    setListening(false);
   }
 
   langSelect.addEventListener('change', () => {
     sourceTitle.textContent = languageInfo[langSelect.value].label + '识别';
   });
-  toggle.addEventListener('click', () => listening ? stop() : start());
+  toggle.addEventListener('click', () => listening ? stop() : void start());
   document.querySelector('#clear').addEventListener('click', () => {
-    stop();
+    if (listening) stop();
+    entries.clear();
     source.innerHTML = '<div class="empty" id="sourceEmpty"><div class="empty-icon">Aa</div>开始后，老师说的话会显示在这里</div>';
     target.innerHTML = '<div class="empty" id="targetEmpty"><div class="empty-icon">文</div>中文译文会同步显示在这里</div>';
   });
-
-  if (!Speech) {
-    document.querySelector('#supportNote').textContent =
-      '当前浏览器不支持网页语音识别。请使用最新版 Chrome 或 Edge；语音识别与翻译需要联网。';
-    toggle.title = '此浏览器不支持语音识别';
-  }
 })();
-
 </script></body></html>
+
