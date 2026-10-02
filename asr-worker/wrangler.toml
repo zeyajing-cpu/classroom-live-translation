@@ -1,0 +1,7 @@
+name = "classroom-live-translation-asr-sign"
+main = "worker.js"
+compatibility_date = "2026-10-03"
+
+[observability]
+enabled = true
+
