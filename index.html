@@ -23,6 +23,7 @@
   let listening = false;
   let recognition = null;
   let restartTimer = null;
+  let stableTimer = null;
   let draftTimer = null;
   let toastTimer = null;
   let retryCount = 0;
@@ -31,8 +32,7 @@
   let lastDraftText = '';
   let draftAbort = null;
   let draftEntry = null;
-  const MAX_RETRIES = 8;
-  const MAX_RETRY_DELAY = 15000;
+  const MAX_RETRY_DELAY = 30000;
 
   const showToast = (message) => {
     toast.textContent = message;
@@ -157,20 +157,14 @@
 
   function scheduleRestart() {
     if (!listening || restartTimer) return;
-    if (retryCount >= MAX_RETRIES) {
-      setListening(false, '连接多次失败，请检查网络后重试');
-      showToast('语音识别暂时无法恢复。网络恢复后，请重新开始聆听。');
-      return;
-    }
-    const delay = Math.min(1000 * (2 ** retryCount), MAX_RETRY_DELAY);
+    const delay = Math.min(1000 * (2 ** Math.min(retryCount, 5)), MAX_RETRY_DELAY);
     retryCount++;
-    setListening(true, `语音连接中断，${Math.ceil(delay / 1000)} 秒后重试`);
+    setListening(true, `语音连接中断，${Math.ceil(delay / 1000)} 秒后自动重试（第 ${retryCount} 次）`);
     restartTimer = setTimeout(() => {
       restartTimer = null;
       if (listening) startRecognition();
     }, delay);
   }
-
   function startRecognition() {
     if (!listening || !Speech) return;
     const instance = new Speech();
@@ -200,12 +194,16 @@
       if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
         listening = false;
         clearTimeout(restartTimer);
+        clearTimeout(stableTimer);
+        stableTimer = null;
         restartTimer = null;
         setListening(false);
         showToast('麦克风或语音服务未获授权。请在浏览器设置中允许麦克风后重试。');
       } else if (event.error === 'audio-capture') {
         listening = false;
         clearTimeout(restartTimer);
+        clearTimeout(stableTimer);
+        stableTimer = null;
         restartTimer = null;
         setListening(false);
         showToast('没有检测到可用麦克风，请检查设备连接。');
@@ -220,9 +218,17 @@
       }
     };
 
-    instance.onstart = () => setListening(true, '正在聆听');
+    instance.onstart = () => {
+      setListening(true, '正在聆听');
+      clearTimeout(stableTimer);
+      stableTimer = setTimeout(() => {
+        if (listening && recognition === instance) retryCount = 0;
+      }, 30000);
+    };
 
     instance.onend = () => {
+      clearTimeout(stableTimer);
+      stableTimer = null;
       if (recognition === instance && listening) scheduleRestart();
       else if (!listening) setListening(false);
     };
@@ -252,8 +258,10 @@
   function stop() {
     listening = false;
     clearTimeout(restartTimer);
+    clearTimeout(stableTimer);
     clearTimeout(draftTimer);
     restartTimer = null;
+    stableTimer = null;
     draftAbort?.abort();
     if (recognition) {
       const oldRecognition = recognition;
